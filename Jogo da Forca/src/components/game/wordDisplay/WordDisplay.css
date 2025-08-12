@@ -1,0 +1,44 @@
+.word-display{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: baseline;
+    justify-content: space-between;
+    width: 20vw;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+}
+
+.letter{
+    width: 2vw;
+    height: 2vw;
+    font-family: Inter;
+    line-height: 1vw;
+    font-size: 2vw;
+    border-bottom: 4px solid black;
+}
+
+@media(max-width:800px){
+    .word-display{
+        width: 45vw;
+    }
+    
+    .letter{
+        width: 5vw;
+        line-height: 0vw;
+        font-size: 3vw;
+    }
+}
+
+@media(max-width:500px){
+    .word-display{
+        width: 70vw;
+        height:2vh;
+    }
+    
+    .letter{
+        width: 6vw;
+        font-size: 15px;
+        border-bottom: 1vw solid black;
+    }
+}

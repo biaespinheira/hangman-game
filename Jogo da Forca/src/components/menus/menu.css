@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oi&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    line-height: 1;
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+}
+
+
+.title{
+    display: flex;
+}
+
+.title h1 {
+    width: 50vw; 
+    
+    font-family: 'Oi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8vw; 
+    line-height: 5.4vw; 
+    text-align: center;
+    letter-spacing: -0.06em;
+
+    color: #000000;
+
+    transform: rotate(3.35deg);
+
+    text-shadow: 3px 3px #ffcd00, -3px -3px #ffcd00, 3px -3px #ffcd00, -3px 3px #ffcd00;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 2vw; 
+
+    margin-top: 5vh;
+
+    transform: rotate(2.4deg);
+}
+
+.add-word-btn{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 8px;
+
+    width: 161px;
+    height: 61px;
+
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    box-shadow: 6px 6px 0px #000000;
+    border-radius: 12px;
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+
+    border: 1px solid #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(2.4deg);
+
+}
+
+.game-btn{
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 8px;
+
+    width: 104px;
+    height: 61px;
+
+    background: #0BB458;
+    border: 3px solid #000000;
+
+
+    box-shadow: 6px 6px 0px #000000;
+    border-radius: 12px;
+    transform: rotate(2.4deg);
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #CCF3DD;
+
+}
+
+
+.hidden{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/menu-background.png'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw; 
+    height: 100vh; 
+    animation: fadeIn 0.5s ease forwards; 
+    
+}
+
+
+.add-word-btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.game-btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+@media (max-width: 1200px) {
+    .title h1{
+        width: 90vw;
+        font-size: 10vw;
+        line-height: 7vw;
+    }
+}
+@media (max-width: 900px) {
+
+    .title h1{
+        width: 90vw;
+        font-size: 12vw;
+        line-height: 8vw;
+        text-shadow: 2px 2px #ffcd00, -2px -2px #ffcd00, 2px -2px #ffcd00, -2px 2px #ffcd00;
+    }
+    
+}
+@media (max-width: 400px) {
+    .title h1{
+        width: 90vw;
+        font-size: 13vw;
+        line-height: 8vw;
+        text-shadow: 1px 1px #ffcd00, -1px -1px #ffcd00, 1px -1px #ffcd00, -1px 1px #ffcd00;
+    }
+    .buttons{
+        flex-direction: column;
+        gap:2vh;
+    }
+
+   .add-word-btn {
+
+    padding: 12px 18px; 
+    gap: 6px; 
+
+    width: 120.75px; 
+    height: 45.75px; 
+
+    border: 2.25px solid #000000; 
+    box-shadow: 4.5px 4.5px 0px #000000; 
+    border-radius: 9px; 
+
+    font-size: 18px; 
+    line-height: 21.75px; 
+
+    color: #000000;
+
+    border: 0.75px solid #000000; 
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25), 0px 3px 3px rgba(0, 0, 0, 0.25); 
+    transform: rotate(2.4deg);
+}
+
+.game-btn {
+    padding: 12px 18px; 
+    gap: 6px; 
+
+    width: 78px; 
+    height: 45.75px; 
+
+    background: #0BB458;
+    border: 2.25px solid #000000; 
+
+    box-shadow: 4.5px 4.5px 0px #000000; 
+    border-radius: 9px; 
+
+    font-size: 18px; 
+    line-height: 21.75px; 
+
+    color: #CCF3DD;
+}
+
+}
+@media (max-width: 300px) {
+    .add-word-btn{
+        width: 40vw;
+        height: 20vw;
+        font-size: 6vw;
+        line-height: 7vw;
+    }
+    .game-btn{
+        width: 30vw;
+        height: 20vw;
+        font-size: 6vw;
+        line-height: 7vw;
+    }
+}
