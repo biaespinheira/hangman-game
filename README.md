@@ -41,7 +41,7 @@ Ao iniciar o jogo, você terá duas opções:
 ## 📂 Tecnologias Utilizadas
 - HTML5
 - CSS3
-- JavaScript
+- TypeScript
 
 ---
 
