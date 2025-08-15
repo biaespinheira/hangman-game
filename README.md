@@ -1,7 +1,7 @@
 # 🎯 Jogo da Forca
 
 Um jogo da forca interativo feito em JavaScript, onde você pode **jogar** ou **adicionar novas palavras** ao banco de dados do jogo.  
-O placar é atualizado automaticamente conforme você joga.
+O placar é atualizado automaticamente conforme você joga. Disponível em: https://hangman-game-two-mocha.vercel.app/
 
 ---
 
